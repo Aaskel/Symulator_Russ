@@ -36,7 +36,7 @@ public class Trans : MonoBehaviour
                     if (yMyszy > 0)
                     {
                         zmiennay++;
-                        silnik.transform.eulerAngles = new Vector3(zmiennay, 0, 0);
+                        silnik.transform.eulerAngles = new Vector3(zmiennay, shp.cog, 0);
 
                     }
                 }
@@ -45,7 +45,7 @@ public class Trans : MonoBehaviour
                     if (yMyszy < 0)
                     {
                         zmiennay--;
-                        silnik.transform.eulerAngles = new Vector3(zmiennay, 0, 0);
+                        silnik.transform.eulerAngles = new Vector3(zmiennay, shp.cog, 0);
                     }
                 }
             }
@@ -59,7 +59,7 @@ public class Trans : MonoBehaviour
                         if (xMyszy > 0)
                         {
                             zmiennax = zmiennax + 5;
-                            ster.transform.eulerAngles = new Vector3(0, 0, zmiennax);
+                            ster.transform.eulerAngles = new Vector3(0, shp.cog,-zmiennax);
 
                         }
                     }
@@ -69,7 +69,7 @@ public class Trans : MonoBehaviour
                         if (xMyszy < 0)
                         {
                             zmiennax = zmiennax - 5;
-                            ster.transform.eulerAngles = new Vector3(0, 0, zmiennax);
+                           ster.transform.eulerAngles = new Vector3(0, shp.cog, -zmiennax);
                         }
                     }
                 }
