@@ -17,8 +17,8 @@ public class Echosonda : MonoBehaviour
         float bladconvert = (float)blad;
         
         opoznienie += Time.deltaTime;
-        Debug.Log(blad);
-        Debug.Log(bladconvert);
+        //Debug.Log(blad);
+        //Debug.Log(bladconvert);
         if (opoznienie >= 5)
         {
             if (Physics.Raycast(transform.position, Vector3.down, out hit))

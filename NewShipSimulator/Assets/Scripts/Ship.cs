@@ -41,7 +41,7 @@ public class Ship : MonoBehaviour {
             transform.position.z + Mathf.Cos(cog * Mathf.Deg2Rad) * speedInMetersSec * Time.deltaTime
         );
 
-        transform.rotation = Quaternion.Euler(-90f, cog, 0);
+        transform.rotation = Quaternion.Euler(0, cog, 0);
     }
 
     public float getDepth()
